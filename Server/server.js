@@ -1,7 +1,5 @@
 // we will handle socket connection here
-
 const io = require('socket.io')(8000);
-const cors = require('cors');
 const users = {};
 
 io.on('connection', (socket) => {
