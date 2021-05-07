@@ -20,7 +20,7 @@ socket.on('user-joined', (nameOfuser) => {
 });
 
 socket.on('receive', (data) => {
-  append(`${data.nameOfuser} - ${data.message}`, 'left');
+  append(`${data.nameOfuser} : ${data.message}`, 'left');
 });
 form.addEventListener('submit', (e) => {
   e.preventDefault();
